@@ -1,0 +1,22 @@
+.clearfix:after {
+  content: “.”;
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+/* Hides from IE-mac \*/
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */
+/*此外，layout.css中还可以放入自己常用的布局，比如 #wrap{margin:0 auto;width:960px;}之类的规则。看个人喜好而定。*/
