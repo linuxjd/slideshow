@@ -75,7 +75,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
@@ -88,7 +88,7 @@ module.exports = function (grunt) {
         options: {
           open: false,
           port: 9001,
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect.static('test'),
@@ -254,28 +254,27 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= config.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/scripts/scripts.js': [
-    //         '<%= config.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
+    //    cssmin: {
+    //      css: {
+    //        src: '.tmp/styles/main.css',
+    //        dest: '<%= config.dist %>/styles/main.css'
+    //      }
+    //    },
+    //    uglify: {
+    //      dist: {
+    //        files: {
+    //          '<%= config.dist %>/scripts/scripts.js': [
+    //             '<%= config.dist %>/scripts/scripts.js'
+    //           ]
+    //        }
+    //      }
+    //    },
+    //    concat: {
+    //      css: {
+    //        src: ['<%= config.app %>/styles/*.css'],
+    //        dest: '.tmp/styles/main.css'
+    //      }
+    //    },
 
     // Copies remaining files to places other tasks can use
     copy: {
