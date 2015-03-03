@@ -28,9 +28,110 @@ body {
   padding: 0.2em 0;
 }
 
-.box {
+.slide-box {
+  position: relative;
   width: 600px;
   height: 400px;
   overflow: hidden;
+  display: block;
   border: 3px solid #333;
+}
+
+.slide-box ol {
+  position: absolute;
+  left: 0;
+  width: 4200px;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slide-box ol li {
+  float: left;
+  display: block;
+}
+
+.slide-box .dots {
+  position: absolute;
+  bottom: 15px;
+  height: 13px;
+  text-align: center;
+  font-size: 0;
+  border-radius: 10px;
+  width: 71px;
+  z-index: 2;
+  left: 50%;
+  margin-left: -36px;
+  background: rgba(255, 255, 255, .4);
+  filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4CFFFFFF', EndColorStr='#4CFFFFFF');
+}
+
+.dots li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  margin: 2px;
+}
+
+.dots span {
+  display: block;
+  cursor: pointer;
+  width: 9px;
+  padding-top: 9px;
+  height: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #b7b7b7;
+}
+
+.dots .on {
+  background: #f40;
+}
+
+.slide-box .arrow {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  font-size: 36px;
+  z-index: 2;
+  color: #fff;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, .5);
+}
+
+.slide-box:hover .arrow {
+  display: block;
+}
+
+#prev {
+  left: 20px;
+}
+
+#next {
+  right: 20px;
+}
+
+.arrow i {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.s-prev {
+  background: rgba(0, 0, 0, .3) url(../images/icon/arrow-left.png) center center no-repeat;
+}
+
+.s-next {
+  background: rgba(0, 0, 0, .3) url(../images/icon/arrow-right.png) center center no-repeat;
 }

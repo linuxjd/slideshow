@@ -15,7 +15,6 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/typography.css">
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
@@ -25,51 +24,54 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-  <div class="box">
-    <ol>
-      <li>
-        <a href="#"><img src="images/1.jpg" alt="this is a picture">
-        </a>
-      </li>
-      <li>
-        <a href="#"><img src="images/2.jpg" alt="this is a picture">
-        </a>
-      </li>
-      <li>
-        <a href="#"><img src="images/3.jpg" alt="this is a picture">
-        </a>
-      </li>
-      <li>
-        <a href="#"><img src="images/4.jpg" alt="this is a picture">
-        </a>
-      </li>
-      <li>
-        <a href="#"><img src="images/5.jpg" alt="this is a picture">
-        </a>
-      </li>
-    </ol>
-    <ul class="dots">
-      <li>
-        <a href="#">.</a>
-      </li>
-      <li>
-        <a href="#">.</a>
-      </li>
-      <li>
-        <a href="#">.</a>
-      </li>
-      <li>
-        <a href="#">.</a>
-      </li>
-      <li>
-        <a href="#">.</a>
-      </li>
-    </ul>
-    <a href="#" id="prev" class="arrow">上一张</a>
-    <a href="#" id="next" class="arrow">下一张</a>
+  <div class="wrap">
+    <div class="slide-box">
+      <ol class="list" style="left: -600px">
+        <li>
+          <a href="#"><img src="images/5.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/1.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/2.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/3.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/4.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/5.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+        <li>
+          <a href="#"><img src="images/1.jpg" width="600px" height="400px" alt="this is a picture">
+          </a>
+        </li>
+      </ol>
+      <ul class="dots">
+        <li><span index="0" class="on">1</span>
+        </li>
+        <li><span index="1">2</span>
+        </li>
+        <li><span index="2">3</span>
+        </li>
+        <li><span index="3">4</span>
+        </li>
+        <li><span index="4">5</span>
+        </li>
+      </ul>
+      <a href="#" id="prev" class="arrow"><i class="s-prev"></i></a>
+      <a href="#" id="next" class="arrow"><i class="s-next"></i></a>
+    </div>
   </div>
-
 
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->

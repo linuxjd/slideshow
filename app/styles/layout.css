@@ -20,3 +20,10 @@
 }
 /* End hide from IE-mac */
 /*此外，layout.css中还可以放入自己常用的布局，比如 #wrap{margin:0 auto;width:960px;}之类的规则。看个人喜好而定。*/
+
+.wrap {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
